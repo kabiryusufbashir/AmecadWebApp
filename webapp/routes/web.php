@@ -17,6 +17,30 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/it', function () {
+    return view('it');
+});
+
+Route::get('/electrical', function () {
+    return view('electrical');
+});
+
+Route::get('/civil', function () {
+    return view('civil');
+});
+
+Route::get('/mechanical', function () {
+    return view('mechanical');
+});
+
+Route::get('/team', function () {
+    return view('team');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
