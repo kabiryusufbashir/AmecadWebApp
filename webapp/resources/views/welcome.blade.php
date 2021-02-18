@@ -26,7 +26,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                         </h1>
                         <div class="row my-4">
                             <div class="col-md-6 text-left">
-                                <button class="btn btn-danger btn-lg"><i class="fas fa-school"></i>  Join Our Class</button>
+                                <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#joinClassModal"><i class="fas fa-school"></i>  Join Our Class</button>
                             </div>
                         </div>
                     </div>
@@ -151,6 +151,124 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
             <p class="my-2">
                 Get the Edge with Amec Certified, Well Equipped, Passionate, Seasoned and International Trained Instructors
             </p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="joinClassModal" tabindex="-1" role="dialog" aria-labelledby="joinClassModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="joinClassModalLabel">Join Class</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-left">
+                <form method="POST" action="/addstudent" enctype="multipart/form-data">
+                    @csrf
+
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <b>Surname</b>
+                            <input placeholder="Surname (e.g Kabir)" id="surname" type="text" class="form-control @error('surname') is-invalid @enderror" name="surname" value="{{ old('surname') }}">
+
+                            @error('surname')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <b>First Name</b>
+                            <input placeholder="First Name (e.g Yusuf)" id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}">
+
+                            @error('first_name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <b>Other Name</b>
+                            <input placeholder="Other Name (e.g Bashir)" id="other_name" type="text" class="form-control @error('other_name') is-invalid @enderror" name="other_name" value="{{ old('other_name') }}">
+
+                            @error('other_name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <b>Gender</b> 
+                            <select id="select" class="form-control @error('gender') is-invalid @enderror" name="gender">
+                                <option value=""></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+
+                            @error('gender')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <b>Date of Birth</b> 
+                            <input id="dob" type="date" class="form-control @error('dob') is-invalid @enderror" name="dob">
+
+                            @error('dob')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <b>Phone</b>
+                            <input placeholder="Phone (e.g +2348000000000)" id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone">
+
+                            @error('phone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <b>Email</b>
+                            <input placeholder="Email (e.g info@teampiccolo.com)" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email">
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <b>Address</b>
+                            <textarea placeholder="Address (e.g No 1 Web Development Street off Team Piccolo Road, Kano)" id="address" class="form-control @error('address') is-invalid @enderror" name="address"></textarea>
+
+                            @error('address')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+                </form>                
+                    
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Apply</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>

@@ -33,8 +33,8 @@ Route::get('/mechanical', function () {
     return view('mechanical');
 });
 
-Route::get('/team', function () {
-    return view('team');
+Route::get('/about-us', function () {
+    return view('about');
 });
 
 Route::get('/contact', function () {
