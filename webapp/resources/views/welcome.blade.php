@@ -171,30 +171,10 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
 
                     <div class="form-group row">
                         <div class="col-md-12">
-                            <b>Surname</b>
-                            <input placeholder="Surname (e.g Kabir)" id="surname" type="text" class="form-control @error('surname') is-invalid @enderror" name="surname" value="{{ old('surname') }}">
+                            <b>Full Name</b>
+                            <input placeholder="Full Name (e.g Engr. Samir Bashir)" id="full_name" type="text" class="form-control @error('full_name') is-invalid @enderror" name="other_name" value="{{ old('other_name') }}">
 
-                            @error('surname')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="col-md-12">
-                            <b>First Name</b>
-                            <input placeholder="First Name (e.g Yusuf)" id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}">
-
-                            @error('first_name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="col-md-12">
-                            <b>Other Name</b>
-                            <input placeholder="Other Name (e.g Bashir)" id="other_name" type="text" class="form-control @error('other_name') is-invalid @enderror" name="other_name" value="{{ old('other_name') }}">
-
-                            @error('other_name')
+                            @error('full_name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -203,7 +183,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <b>Gender</b> 
                             <select id="select" class="form-control @error('gender') is-invalid @enderror" name="gender">
                                 <option value=""></option>
@@ -217,7 +197,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                                 </span>
                             @enderror
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <b>Date of Birth</b> 
                             <input id="dob" type="date" class="form-control @error('dob') is-invalid @enderror" name="dob">
 
@@ -230,7 +210,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <b>Phone</b>
                             <input placeholder="Phone (e.g +2348000000000)" id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone">
 
@@ -240,7 +220,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                                 </span>
                             @enderror
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <b>Email</b>
                             <input placeholder="Email (e.g info@teampiccolo.com)" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email">
 
@@ -255,6 +235,57 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                             <textarea placeholder="Address (e.g No 1 Web Development Street off Team Piccolo Road, Kano)" id="address" class="form-control @error('address') is-invalid @enderror" name="address"></textarea>
 
                             @error('address')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <b>Courses</b> 
+                            <select id="courses" class="form-control @error('courses') is-invalid @enderror" name="courses">
+                                <option value=""></option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Graphics Design">Graphics Design</option>
+                                <option value="Scratch Programming for Kids">Scratch Programming for Kids</option>
+                                <option value="Programming in Python (Django Framework)">Programming in Python (Django Framework)</option>
+                                <option value="Computer Appreciation & Microsoft Office Packages">Computer Appreciation & Microsoft Office Packages</option>
+                                <option value="Artificial Intelligence & Cloud Computing">Artificial Intelligence & Cloud Computing</option>
+                                <option value="Certificate in Information Technology">Certificate in Information Technology</option>
+                                <option value="Dialux">Dialux</option>
+                                <option value="AutoCAD Electrical">AutoCAD Electrical</option>
+                                <option value="Revit Electrical">Revit Electrical</option>
+                                <option value="ETAP">ETAP</option>
+                                <option value="Electrical Buildings Services">Electrical Buildings Services</option>
+                                <option value="Telecommunication Infrastructure Deployment & Maintenance">Telecommunication Infrastructure Deployment & Maintenance</option>
+                                <option value="Industrial Control & Home Automation">Industrial Control & Home Automation</option>
+                                <option value="AutoCAD Civil">AutoCAD Civil</option>
+                                <option value="Civil 3D">Civil 3D</option>
+                                <option value="Prota">Prota</option>
+                                <option value="Structural Design & Detailing">Structural Design & Detailing</option>
+                                <option value="Staad Pro">Staad Pro</option>
+                                <option value="Revit Architecture">Revit Architecture</option>
+                                <option value="Revit Structure">Revit Structure</option>
+                                <option value="Robot Structural Analysis">Robot Structural Analysis</option>
+                                <option value="M.S Project">M.S Project</option>
+                                <option value="SAAP 2000">SAAP 2000</option>
+                                <option value="ETABS/SAFE">ETABS/SAFE</option>
+                                <option value="Primevera">Primevera</option>
+                                <option value="G.I.S & Remote Sensing">G.I.S & Remote Sensing</option>
+                                <option value="SolidWorks">SolidWorks</option>
+                                <option value="Ansys">Ansys</option>
+                                <option value="KeyShots">KeyShots</option>
+                                <option value="ProE/Creo">ProE/Creo</option>
+                                <option value="Plumbling System Design & Drafting">Plumbling System Design & Drafting</option>
+                                <option value="Fire Fighting system Design & Drafting">Fire Fighting system Design & Drafting</option>
+                                <option value="Revit (HVAC)">Revit (HVAC)</option>
+                                <option value="Revit (MEP)">Revit (MEP)</option>
+                                <option value="Computer Aided Auto Diagnostics Repair & Maintenance">Computer Aided Auto Diagnostics Repair & Maintenance</option>
+                            </select>
+
+                            @error('courses')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
