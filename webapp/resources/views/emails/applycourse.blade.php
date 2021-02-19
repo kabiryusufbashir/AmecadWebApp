@@ -19,12 +19,12 @@
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-<body style="border:1px solid #eee; font-size:1.1rem; font-family: 'Montserrat', sans-serif; padding: 1% 3%;">
-    <h1>Course Enquiry</h1>
+<body style="border:1px solid #eee; font-size:0.9rem; font-family: 'Montserrat', sans-serif; padding: 1% 3%;">
+    <h3>Course Enquiry</h3>
     <img src="https://www.ameccad.com/images/logo.png" alt="Logo" class="img-fluid w-50">
     <hr>
     <p>
-        </h2>Dear Sir,</h2>
+        <b>Dear Sir,</b>
 
         <div>I am writing to apply for <b>{{$course}}</b> course offered by Ameccad Training Center Kano.</div>
         <div>I was born on <b>{{$dob}}</b> and I am currently living in <b>{{$address}}</b>.</div>

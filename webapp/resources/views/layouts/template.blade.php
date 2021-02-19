@@ -25,6 +25,11 @@
         <!-- Navigation -->
         <div class="row bg-white shadow fixed-top">
             <div id="header" class="col-md-10 mx-auto py-2">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-5">
+                        @include('layouts.messages')
+                    </div>
+                </div>
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a href="/" class="navbar-brand">
                         <img  src="/images/logo.png" alt="Logo" class="img-fluid w-50">

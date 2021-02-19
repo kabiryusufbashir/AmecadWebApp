@@ -25,7 +25,12 @@ class ApplyCourseController extends Controller
             ApplyCourse::create($data);
             try{
                 $applycourse = ApplyCourse::latest('id')->first();
-                Mail::to('kabiryusufbashir@gmail.com')->send(new ApplyCourseSend($applycourse));
+                Mail::to('kabiryusufbashir@gmail.com')
+                    ->cc('abdulbash3k@gmail.com')
+                    ->bcc('info@ameccad.com')
+                    ->send(new ApplyCourseSend($applycourse));
+                return redirect('/')->with('success','Application recieved successful!');    
+    
             }catch(Exception $e){
                 return redirect('/')->with('error', $e->getMessage());    
             }
