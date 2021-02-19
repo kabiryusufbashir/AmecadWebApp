@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApplyCourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,8 @@ Route::get('/about-us', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::post('/applycourse', [ApplyCourseController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

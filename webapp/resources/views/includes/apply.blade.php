@@ -1,21 +1,20 @@
 <!-- Modal -->
-<div class="modal fade" id="joinClassModal" tabindex="-1" role="dialog" aria-labelledby="joinClassModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-success text-white">
-                <h5 class="modal-title" id="joinClassModalLabel">Join Class</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-left">
-                <form method="POST" action="/applycourse" enctype="multipart/form-data">
-                    @csrf
-
+<form method="POST" action="/applycourse" enctype="multipart/form-data">
+    @csrf
+    <div class="modal fade" id="joinClassModal" tabindex="-1" role="dialog" aria-labelledby="joinClassModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="joinClassModalLabel">Join Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-left">
                     <div class="form-group row">
                         <div class="col-md-12">
                             <b>Full Name</b>
-                            <input placeholder="Full Name (e.g Engr. Samir Bashir)" id="full_name" type="text" class="form-control @error('full_name') is-invalid @enderror" name="other_name" value="{{ old('other_name') }}">
+                            <input placeholder="Full Name (e.g Engr. Samir Bashir)" id="full_name" type="text" class="form-control @error('full_name') is-invalid @enderror" name="full_name" value="{{ old('full_name') }}">
 
                             @error('full_name')
                                 <span class="invalid-feedback" role="alert">
@@ -84,10 +83,11 @@
                             @enderror
                         </div>
                     </div>
+                    
                     <div class="form-group row">
                         <div class="col-md-12">
                             <b>Choice Courses</b> 
-                            <select class="form-control @error('courses') is-invalid @enderror" name="course">
+                            <select id="course" class="form-control @error('courses') is-invalid @enderror" name="course">
                                 <option value=""></option>
                                 <option value="Digital Marketing">Digital Marketing</option>
                                 <option value="Web Development">Web Development</option>
@@ -128,21 +128,22 @@
                                 <option value="Computer Aided Auto Diagnostics Repair & Maintenance">Computer Aided Auto Diagnostics Repair & Maintenance</option>
                             </select>
 
-                            @error('courses')
+                            @error('course')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
                         </div>
                     </div>
-                </form>                
-                    
-            </div>
-            
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success">Apply</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Apply</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</form>
+            
