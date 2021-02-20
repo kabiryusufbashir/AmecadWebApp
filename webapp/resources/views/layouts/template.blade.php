@@ -69,18 +69,19 @@
             <div class="col-md-6 mx-auto">
                 <!-- <h3>Let's Keep in Touch</h3> -->
                 <p class="text-white">
-                    Designed by <a class="text-white" href="https://teampiccolo.com">Team Piccolo</a><br>
-                    Copyright &copy; 2021 AMEC CAD TRAINING<br> 
-                    All rights reserved
+                    <a class="mx-1" href="https://m.facebook.com/ameccadng" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a class="mx-1" href="https://twitter.com/ameccadng/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a class="mx-1" href="#" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <a class="mx-1" href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></i></a>
+                </p>
+                <p class="text-white">
+                    Copyright &copy; 2021 AMEC CAD TRAINING All rights reserved
                 </p>
             </div>
         </div>
         <div class="row bg-white py-3">
             <div class="col-md-6 mx-auto">
-                <a class="mx-1" href="https://m.facebook.com/ameccadng" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a class="mx-1" href="https://twitter.com/ameccadng/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a class="mx-1" href="#" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-                <a class="mx-1" href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></i></a>
+                Designed by <a class="text-dark" href="https://teampiccolo.com">Team Piccolo</a>
             </div>
         </div>
     </div>

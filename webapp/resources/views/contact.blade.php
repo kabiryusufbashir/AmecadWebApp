@@ -63,6 +63,15 @@ Contact Us | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                             @enderror
                         </div>
                         <div class="col-md-12 my-3 input-group">
+                            <input type="text" name="phone" id="phone" placeholder="Phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" required>
+
+                            @error('phone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12 my-3 input-group">
                             <textarea class="form-control" name="enquiry" id="enquiry" placeholder="Enquiry" class="form-control @error('enquiry') is-invalid @enderror" value="{{ old('enquiry') }}" required></textarea>
 
                             @error('enquiry')

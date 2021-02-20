@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplyCourseController;
+use App\Http\Controllers\EnquiryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +45,7 @@ Route::get('/contact', function () {
 
 Route::post('/applycourse', [ApplyCourseController::class, 'store']);
 
-Route::post('/sendenquiry', [ApplyCourseController::class, 'store']);
+Route::post('/sendenquiry', [EnquiryController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -24,7 +24,6 @@ class ApplyCourseController extends Controller
         try{
             ApplyCourse::create($data);
             try{
-                $applycourse = ApplyCourse::latest('id')->first();
                 Mail::to('kabiryusufbashir@gmail.com')
                     ->cc('abdulbash3k@gmail.com')
                     ->bcc('info@ameccad.com')
