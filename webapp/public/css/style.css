@@ -22,7 +22,11 @@ body{
 
 .nav-link{
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 600;
+}
+
+.nav-item a{
+    color: #000;
 }
 
 .fa-whatsapp{

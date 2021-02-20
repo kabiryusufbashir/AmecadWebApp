@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @yield('meta')
     <title>@yield('title')</title>
-    <link rel="icon" href="/images/favicon.ico">
+    <link rel="Icon" href="/images/favicon.ico">
 
     <!--CSS Link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -41,22 +41,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link text-dark" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about-us">About Us</a>
+                            <a class="nav-link text-dark" href="/about-us">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+                            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/it">Information Technology</a>
-                                <a class="dropdown-item" href="/electrical#courses">Electrical/Telecomms Engineering</a>
-                                <a class="dropdown-item" href="/civil#courses">Architecture/Civil Engineering</a>
-                                <a class="dropdown-item" href="/mechanical#courses">Mechanical/Automotive Engineering</a>
+                                <a class="dropdown-item text-dark" href="/it">Information Technology</a>
+                                <a class="dropdown-item text-dark" href="/electrical#courses">Electrical/Telecomms Engineering</a>
+                                <a class="dropdown-item text-dark" href="/civil#courses">Architecture/Civil Engineering</a>
+                                <a class="dropdown-item text-dark" href="/mechanical#courses">Mechanical/Automotive Engineering</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact#contact">Contact Us</a>
+                            <a class="nav-link text-dark" href="/contact#contact">Contact Us</a>
                         </li>
                     </ul>
                     </div>
@@ -69,10 +69,10 @@
             <div class="col-md-6 mx-auto">
                 <!-- <h3>Let's Keep in Touch</h3> -->
                 <p class="text-white">
-                    <a class="mx-1" href="https://m.facebook.com/ameccadng" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-                    <a class="mx-1" href="https://twitter.com/ameccadng/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a class="mx-1" href="#" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-                    <a class="mx-1" href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></i></a>
+                    <a class="mx-1" href="https://m.facebook.com/ameccadng" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#fff;"></i></a>
+                    <a class="mx-1" href="https://twitter.com/ameccadng/" target="_blank"><i class="fab fa-twitter fa-2x" style="color:#fff;"></i></a>
+                    <a class="mx-1" href="#" target="_blank"><i class="fab fa-whatsapp fa-2x" style="color:#fff;"></i></a>
+                    <a class="mx-1" href="#" target="_blank"><i class="fab fa-linkedin fa-2x" style="color:#fff;"></i></i></a>
                 </p>
                 <p class="text-white">
                     Copyright &copy; 2021 AMEC CAD TRAINING All rights reserved

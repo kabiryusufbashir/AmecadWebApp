@@ -76,6 +76,5 @@ Team | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
             </p>
         </div>
     </div>
-    <div class="w-25 border-bottom mx-auto"></div>
 </div>
 @endsection
