@@ -50,7 +50,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                         </h1>
                         <div class="row my-4">
                             <div class="col-md-6 text-right ml-auto">
-                                <button class="btn btn-primary btn-lg"><i class="fas fa-check-circle"></i>  Apply Now</button>
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinClassModal"><i class="fas fa-check-circle"></i>  Apply Now</button>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                         </h1>
                         <div class="row my-4">
                             <div class="col-md-6 text-right ml-auto">
-                                <button class="btn btn-primary btn-lg"><i class="fas fa-check-circle"></i>  Apply Now</button>
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinClassModal"><i class="fas fa-check-circle"></i>  Apply Now</button>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ Home | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                         </h1>
                         <div class="row my-4">
                             <div class="col-md-6 text-left">
-                                <button class="btn btn-warning btn-lg text-white"><i class="fas fa-map-marker-alt"></i>  Contact Us</button>
+                                <a href="/contact#contact"><button class="btn btn-warning btn-lg text-white"><i class="fas fa-map-marker-alt"></i>  Contact Us</button></a>
                             </div>
                         </div>
                     </div>

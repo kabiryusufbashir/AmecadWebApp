@@ -44,6 +44,8 @@ Route::get('/contact', function () {
 
 Route::post('/applycourse', [ApplyCourseController::class, 'store']);
 
+Route::post('/sendenquiry', [ApplyCourseController::class, 'store']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
