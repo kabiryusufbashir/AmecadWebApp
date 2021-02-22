@@ -81,7 +81,7 @@ Contact Us | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                             @enderror
                         </div>
                         <div class="my-3 form-group">
-                            <button class="btn btn-success btn-lg" type="submit" name="submit"><i class="fas fa-contact"></i>  Contact</button>
+                            <button class="btn btn-success btn-lg" type="submit" name="submit">Send</button>
                         </div>
                     </form>
                 </div>
@@ -94,7 +94,7 @@ Contact Us | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                             <i class="fas fa-phone"></i> 
                             <span class="col-md-3">
                                 <a class="text-dark" href="tel:+2348066626200">
-                                    <b class="ml-2">08066626200</b>
+                                    <b class="mx-4">08066626200</b>
                                 </a>
                             </span>
                             <span class="col-md-3">
@@ -109,10 +109,17 @@ Contact Us | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                             </span>
                         </div>
                         <div class="row my-2 mx-1">
-                            <a class="text-dark" href="mailto:info@ameccad.com">
-                                <i class="fas fa-envelope-square"></i> 
-                                <b class="mx-4">info@ameccad.com</b>
-                            </a>
+                            <i class="fas fa-envelope-square"></i>
+                            <span class="col-md-4">
+                                <a class="text-dark" href="mailto:ameccad@gmail.com">
+                                    <b class="ml-4">ameccad@gmail.com</b>
+                                </a>
+                            </span>
+                            <span class="col-md-4">
+                                <a class="text-dark" href="mailto:info@ameccad.com">
+                                    <b class="ml-5">info@ameccad.com</b>
+                                </a>    
+                            </span>
                         </div>
                         <div class="row my-2 mx-1">
                             <a class="text-dark">
