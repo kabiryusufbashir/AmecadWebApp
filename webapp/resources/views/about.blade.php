@@ -37,12 +37,12 @@ Team | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
         <h2 class="text-center my-3">Our Team</h2>
         <div class="row">
             <div class="col-md-4">
-                <img src="images/directors.jpg" alt="Engr. Tijjani Aminu Ibrahim" class="border rounded-circle w-75 img-fluid">
+                <img src="images/sufi.jpg" alt="Engr. Tijjani Aminu Ibrahim" class="border rounded-circle w-75 img-fluid">
                     <h5 class="mt-3 text-center">Engr. Tijjani Aminu Ibrahim</h5>
                     <p>Managing Director</p>
             </div>
             <div class="col-md-4">
-                <img src="images/directors.jpg" alt="Engr. Auwal Abubakar Uthman" class="border rounded-circle w-75 img-fluid">
+                <img src="images/awwal.jpg" alt="Engr. Auwal Abubakar Uthman" class="border rounded-circle w-75 img-fluid">
                     <h5 class="mt-3 text-center">Engr. Auwal Abubakar Uthman</h5>
                     <p>Director Engineering/Center Manager</p>
             </div>
@@ -62,7 +62,7 @@ Team | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
                     <p>Director Research & Development</p>
             </div>
             <div class="col-md-4 mx-auto">
-                <img src="images/directors.jpg" alt="Engr. Abba Ibrahim" class="border rounded-circle w-75 img-fluid">
+                <img src="images/abba.jpg" alt="Engr. Abba Ibrahim" class="border rounded-circle w-75 img-fluid">
                     <h5 class="mt-3 text-center">Engr. Abba Ibrahim</h5>
                     <p>Director Planning</p>
             </div>
