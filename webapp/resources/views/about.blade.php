@@ -10,7 +10,7 @@ Team | AMEC CAD TRAINING AND MANAGEMENT SERVICES LTD
 @endsection
 
 @section('container')
-<div id="slogan" class="mx-3 col-md-10 mx-auto">
+<div id="slogan" class="col-md-10 mx-auto">
     <div class="col-md-3 mx-auto my-3">
         <img src="images/united.png" alt="Team Collaboration" class="w-50 img-fluid">
     </div>
